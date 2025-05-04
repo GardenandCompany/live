@@ -7,56 +7,56 @@ const products = [
     id: 1,
     name: "Mini Folding Portable Barbecue - Foldecue",
     description: "Compact, foldable charcoal grill ideal for travel, picnics, and small gatherings. Durable and lightweight.",
-    price: "€29.99",
+    price: "€45",
     image: "/images/foldecue1.jpg"
   },
   {
     id: 2,
     name: "Coal Barbecue with Wheels - Algon",
     description: "A robust, mobile charcoal barbecue with large grilling surface and sleek design for garden use.",
-    price: "€42.40",
+    price: "€64",
     image: "/images/algon1.jpg"
   },
   {
     id: 3,
     name: "Coal Barbecue with Wheels - DKD Home Decor",
     description: "Stylish and sturdy charcoal grill with enhanced portability and black finish for a modern look.",
-    price: "€56.75",
+    price: "€85",
     image: "/images/dkd1.jpg"
   },
   {
     id: 4,
     name: "Multi-function Weather Station - Alecto",
     description: "Stay updated with temperature and lunar phases in a sleek, modern device. Ideal for indoor use.",
-    price: "€22.19",
+    price: "€33",
     image: "/images/alecto1.jpg"
   },
   {
     id: 5,
     name: "Environmental Thermometer - Ferrestock",
     description: "Classic wall-mounted thermometer for indoor/outdoor use. Displays Celsius and Fahrenheit.",
-    price: "€12.99",
+    price: "€19",
     image: "/images/thermometer1.jpg"
   },
   {
     id: 6,
     name: "Fountain Brown Plastic Resin",
     description: "Soothing resin fountain for indoor or garden settings. Compact and elegant.",
-    price: "€43.90",
+    price: "€66",
     image: "/images/fountain1.jpg"
   },
   {
     id: 7,
     name: "Fountain Oval Brown Resin",
     description: "Oval resin water fountain with a calming presence. Perfect for patios and interiors.",
-    price: "€38.68",
+    price: "€58",
     image: "/images/fountain2.jpg"
   },
   {
     id: 8,
     name: "Wireless Flame Speaker - InnovaGoods",
     description: "LED flame-effect speaker with Bluetooth 5.0. Combines ambiance and music perfectly.",
-    price: "€29.67",
+    price: "€45",
     image: "/images/speaker1.jpg"
   }
 ];
@@ -100,3 +100,4 @@ export default function Home() {
     </div>
   );
 }
+
