@@ -1,6 +1,5 @@
-
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { Card } from "../components/ui/card";
+import { Button } from "../components/ui/button";
 import { useState } from "react";
 
 const products = [
@@ -75,13 +74,13 @@ export default function Home() {
       <section className="grid md:grid-cols-4 gap-6">
         {products.map(product => (
           <Card key={product.id} className="cursor-pointer hover:scale-105 transition-transform" onClick={() => setSelected(product)}>
-            <CardContent className="p-4">
+            <div className="p-4">
               <img src={product.image} alt={product.name} className="w-full h-40 object-cover rounded-xl mb-4" />
               <h2 className="text-lg font-semibold">{product.name}</h2>
               <p className="text-sm text-gray-500">{product.description}</p>
               <p className="mt-2 font-bold">{product.price}</p>
-              <Button className="mt-4">Buy with Pay</Button>
-            </CardContent>
+              <Button className="mt-4 w-full bg-green-700 hover:bg-green-600 text-white">Buy with Pay</Button>
+            </div>
           </Card>
         ))}
       </section>
@@ -93,8 +92,8 @@ export default function Home() {
             <img src={selected.image} alt={selected.name} className="w-full h-64 object-cover rounded-lg mb-4" />
             <p className="mb-4 text-gray-600">{selected.description}</p>
             <p className="font-bold mb-4">{selected.price}</p>
-            <Button className="mb-2">Buy with Pay</Button>
-            <Button variant="outline" onClick={() => setSelected(null)}>Close</Button>
+            <Button className="bg-green-700 hover:bg-green-600 w-full text-white mb-2">Buy with Pay</Button>
+            <Button variant="outline" className="w-full" onClick={() => setSelected(null)}>Close</Button>
           </div>
         </div>
       )}
